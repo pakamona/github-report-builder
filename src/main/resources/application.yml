@@ -1,0 +1,16 @@
+search:
+    code: https://api.github.com/search/code?q=extension:java+repo:pakamona/github-report-builder
+    commit: https://api.github.com/repos/pakamona/github-report-builder/commits?path=
+
+filter:
+    dateFrom: 2019-06-05T10:00:00Z
+
+connection:
+    timeout: 5000
+    requestTimeout: 20000
+    socketTimeout: 15000
+    maxConnectionPool: 35
+    maxConnectionPerRoute: 35
+
+server:
+    port: 5555
