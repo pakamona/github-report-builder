@@ -1,11 +1,11 @@
-package com.pakamona.githubreportbuilder.controllers;
+package com.pakamona.githubreportbuilder.core.controllers;
 
 import com.google.gson.Gson;
-import com.pakamona.githubreportbuilder.client.CodeSearchHttpClient;
-import com.pakamona.githubreportbuilder.client.CommitSearchHttpClient;
-import com.pakamona.githubreportbuilder.search.code.CodeSearchResult;
-import com.pakamona.githubreportbuilder.search.commit.Commit;
-import com.pakamona.githubreportbuilder.search.commit.CommitSearchResult;
+import com.pakamona.githubreportbuilder.requests.code.client.CodeSearchHttpClient;
+import com.pakamona.githubreportbuilder.requests.commit.client.CommitSearchHttpClient;
+import com.pakamona.githubreportbuilder.requests.code.entity.CodeSearchResult;
+import com.pakamona.githubreportbuilder.requests.commit.entity.Commit;
+import com.pakamona.githubreportbuilder.requests.commit.entity.CommitSearchResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;

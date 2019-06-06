@@ -1,5 +1,6 @@
-package com.pakamona.githubreportbuilder.client;
+package com.pakamona.githubreportbuilder.requests.commit.client;
 
+import com.pakamona.githubreportbuilder.core.client.AbstractHttpClient;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 

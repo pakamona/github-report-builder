@@ -1,4 +1,4 @@
-package com.pakamona.githubreportbuilder.search.commit;
+package com.pakamona.githubreportbuilder.requests.commit.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

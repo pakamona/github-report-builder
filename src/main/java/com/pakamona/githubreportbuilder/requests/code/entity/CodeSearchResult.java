@@ -1,4 +1,4 @@
-package com.pakamona.githubreportbuilder.search.code;
+package com.pakamona.githubreportbuilder.requests.code.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package com.pakamona.githubreportbuilder.client;
+package com.pakamona.githubreportbuilder.core.client;
 
 import org.apache.commons.codec.CharEncoding;
 import org.apache.commons.io.IOUtils;
