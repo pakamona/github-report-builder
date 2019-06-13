@@ -1,9 +1,10 @@
 search:
-    code: https://api.github.com/search/code?q=extension:java+repo:pakamona/github-report-builder
-    commit: https://api.github.com/repos/pakamona/github-report-builder/commits?path=
+    code: https://api.github.com/search/code?q=filename:{fileName}+repo:orgName/repoName+path:/path1/a/b/c+path:/path2/a/b/c+path:/path3/a/b/c+path:/path4/a/b/c&per_page=100&page={searchResultPage}
+    commit: https://api.github.com/repos/pakamona/github-report-builder/commits?path={filePath}
 
 filter:
-    dateFrom: 2019-06-05T10:00:00Z
+    dateFormat: yyyy-MM-dd'T'HH:mm:ss'Z'
+    fileNames: _cq_dialog.xml|dialog.xml|.content.xml
 
 connection:
     timeout: 5000
@@ -11,6 +12,11 @@ connection:
     socketTimeout: 15000
     maxConnectionPool: 35
     maxConnectionPerRoute: 35
+
+authorization:
+    header:
+        name: Authorization
+        value: Basic fakeToken
 
 server:
     port: 5555
