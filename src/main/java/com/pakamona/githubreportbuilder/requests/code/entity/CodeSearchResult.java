@@ -8,5 +8,6 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 public class CodeSearchResult {
+    private int total_count;
     private List<CodeSearchFileData> items;
 }

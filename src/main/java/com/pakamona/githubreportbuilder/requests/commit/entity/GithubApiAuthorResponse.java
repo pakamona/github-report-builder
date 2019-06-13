@@ -5,7 +5,8 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class Commit {
-    private Author author;
-    private String message;
+public class GithubApiAuthorResponse {
+    private String name;
+    private String email;
+    private String date;
 }

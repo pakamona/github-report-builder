@@ -11,7 +11,10 @@ public class CodeSearchHttpClient extends AbstractHttpClient {
     private String query;
 
     @Override
-    public String getQuery() {
-        return query;
+    public String prepareQuery(String[] params) {
+        String fileNameMask = "{fileName}";
+        String searchResultPage = "{searchResultPage}";
+
+        return query.replace(fileNameMask, params[0]).replace(searchResultPage, params[1]);
     }
 }

@@ -11,7 +11,9 @@ public class CommitSearchHttpClient extends AbstractHttpClient {
     private String query;
 
     @Override
-    public String getQuery() {
-        return query;
+    public String prepareQuery(String[] params) {
+        String fileNameMask = "{filePath}";
+
+        return query.replace(fileNameMask, params[0]);
     }
 }
