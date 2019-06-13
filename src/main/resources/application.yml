@@ -1,6 +1,6 @@
 search:
     code: https://api.github.com/search/code?q=filename:{fileName}+repo:orgName/repoName+path:/path1/a/b/c+path:/path2/a/b/c+path:/path3/a/b/c+path:/path4/a/b/c&per_page=100&page={searchResultPage}
-    commit: https://api.github.com/repos/pakamona/github-report-builder/commits?path={filePath}
+    commit: https://api.github.com/repos/orgName/repoName/commits?path={filePath}
 
 filter:
     dateFormat: yyyy-MM-dd'T'HH:mm:ss'Z'
